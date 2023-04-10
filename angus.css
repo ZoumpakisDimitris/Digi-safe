@@ -1,26 +1,35 @@
-body {
+header {
 	margin:0;
 	font-family: system-ui;
-}
-.first { 
+	color: darkslategray;
 	background-color: purple;
 	background-image: url("guy.jpg");
-	background-repeat: repeat;
-	color: Red;
+	background-repeat: repeat-x;
+}
+.header { 
+	background-color: purple;
+	background-image: url("guy.jpg");
+	background-repeat: repeat-x;
+	color: red;
 	text-align: center;
 }
 .main {
+	position: static;
+	border: 3px solid rgba(47, 7, 224, 0.2);
 	background-image: url("absred.jpg");
 	background-color: red;
-	text-align: center;  
+	text-align: center; 
 	width: 100%;  
 	
 } 
 .columnA {
-	float: center;
-	width: 50%;
-	padding:15px;
+	float: left;
+	width: 10%;
+	padding:10px;
+	height: 50cm;
+	background-color: cadetblue;
 	text-allign:center;
+	font-family: sans-serif; 
 }
 
 ul {
@@ -35,7 +44,7 @@ li {
 
 
 
-p {
+.p1 {
 	text-align: center;
 	color: green	;
 	font-family: Serif, Arial;
