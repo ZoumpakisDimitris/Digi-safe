@@ -1,0 +1,51 @@
+header {
+	margin:0;
+	font-family: system-ui;
+	color: darkslategray;
+	background-color: purple;
+	background-image: url("guy.jpg");
+	background-repeat: repeat-x;
+}
+.header { 
+	background-color: purple;
+	background-image: url("guy.jpg");
+	background-repeat: repeat-x;
+	color: red;
+	text-align: center;
+}
+.main {
+	position: static;
+	border: 3px solid rgba(47, 7, 224, 0.2);
+	background-image: url("absred.jpg");
+	background-color: red;
+	text-align: center; 
+	width: 100%;  
+	
+} 
+.columnA {
+	float: left;
+	width: 10%;
+	padding:10px;
+	height: 50cm;
+	background-color: cadetblue;
+	text-allign:center;
+	font-family: sans-serif; 
+}
+
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+li {
+	display:inline;
+	}
+
+
+
+.p1 {
+	text-align: center;
+	color: green	;
+	font-family: Serif, Arial;
+} 
