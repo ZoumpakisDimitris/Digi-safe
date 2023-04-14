@@ -6,9 +6,7 @@ header {
 	background-image: url("guy.jpg");
 	background-repeat: repeat-x;
 }
-body { 
-
-	.header { 
+.header { 
 	background-color: purple;
 	background-image: url("guy.jpg");
 	background-repeat: repeat-x;
@@ -18,12 +16,10 @@ body {
 .main {
 	position: static;
 	border: 3px solid rgba(47, 7, 224, 0.2);
-	background-image: url(absred.jpg");
+	background-image: url("absred.jpg");
 	background-color: red;
 	text-align: center; 
 	width: 100%;  
-	
-.window { 
 	
 } 
 .columnA {
@@ -31,7 +27,7 @@ body {
 	width: 10%;
 	padding:10px;
 	height: 50cm;
-	background-color: black;
+	background-color: cadetblue;
 	text-allign:center;
 	font-family: sans-serif; 
 }
@@ -53,6 +49,3 @@ li {
 	color: green	;
 	font-family: Serif, Arial;
 } 
-footer { 
-	background-color: rgba(41, 61, 41);
-	}
