@@ -1,38 +1,69 @@
-header {
-	margin:0;
-	font-family: system-ui;
-	color: darkslategray;
-	background-color: purple;
-	background-image: url("guy.jpg");
-	background-repeat: repeat-x;
-}
+
 .header { 
-	background-color: purple;
-	background-image: url("guy.jpg");
+	background-color: darksalmon;
+	background-image: url(".jpg");
 	background-repeat: repeat-x;
-	color: red;
+	color: rgb(72, 64, 64);
 	text-align: center;
 }
-.main {
-	position: static;
-	border: 3px solid rgba(47, 7, 224, 0.2);
-	background-image: url("absred.jpg");
-	background-color: red;
-	text-align: center; 
-	width: 100%;  
+body { 
+	background-color: #ffffff;
+	color: rgb(72, 64, 64);
+	margin: 0;
+	padding: 0; 
+}
+	body {
+		font-family: 'Syne', sans-serif;	}
+
+body::-webkit-scrollbar {				/* Customizing the scroll bar */
+	width: 10px;
+	}
+	body::-webkit-scrollbar-track {
+		background: rgb(255, 255, 255);
+	}
+	body::-webkit-scrollbar-thumb {
+		background: darksalmon;
+	}
+	nav { 				/* Customizing the navigation bar */
+		display:contents;
+			float: 0;
+			position: sticky;
+			top: 0;
+			width: 10px;
+	height: 100vh;
+				margin: 0px;
+				padding: 0px;
+		flex-direction: row;
+		align-items: center;
+	background-color: rgb(0, 0, 0);
+	border: 0px solid green;
 	
-} 
+	
+}
+.active {
+	background-color: red;
+}
 .columnA {
-	float: left;
+	float: right;
 	width: 10%;
 	padding:10px;
 	height: 50cm;
-	background-color: cadetblue;
+	background-color: rgba(199, 111, 82, 0.56);
+	text-color: green
 	text-allign:center;
 	font-family: sans-serif; 
 }
 
-ul {
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: darksalmon;
+	background-position-x: 0;
+	background-position-y: 0.5;
+	color: rgb(72, 64, 64);
+}
+
+/* ul {
   list-style-type:none;
   margin:0;
   padding:0;
@@ -41,7 +72,7 @@ ul {
 li {
 	display:inline;
 	}
-
+*/
 
 
 .p1 {
@@ -49,3 +80,18 @@ li {
 	color: green	;
 	font-family: Serif, Arial;
 } 
+
+.grid-container-nav { 
+	display: grid;
+	justify-content: center;
+	row-gap: 100px;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 1;
+	grid-row-end: 1;
+
+}
+
+.slideone { 
+	background-image: url(absred.jpg);
+}
