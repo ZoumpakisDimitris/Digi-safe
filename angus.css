@@ -1,17 +1,22 @@
-
 .header { 
-	background-color: darksalmon;
-	background-image: url(".jpg");
 	background-repeat: repeat-x;
-	color: rgb(72, 64, 64);
+	color: rgb(0, 0, 0);
 	text-align: center;
 }
+
+.stand { 
+
+
+}
+
 body { 
-	background-color: #ffffff;
-	color: rgb(72, 64, 64);
+	background-color: rgb(1, 73, 95);
+	color: rgb(0, 0, 0);
 	margin: 0;
 	padding: 0; 
+	height: 1vw;
 }
+
 	body {
 		font-family: 'Syne', sans-serif;	}
 
@@ -19,10 +24,10 @@ body::-webkit-scrollbar {				/* Customizing the scroll bar */
 	width: 10px;
 	}
 	body::-webkit-scrollbar-track {
-		background: rgb(255, 255, 255);
+		background: rgb(1, 73, 95);
 	}
 	body::-webkit-scrollbar-thumb {
-		background: darksalmon;
+		background: rgb(0, 0, 0);
 	}
 	nav { 				/* Customizing the navigation bar */
 		display:contents;
@@ -57,7 +62,7 @@ body::-webkit-scrollbar {				/* Customizing the scroll bar */
 footer {
 	text-align: center;
 	padding: 10px;
-	background-color: darksalmon;
+	background-color: rgb(184, 70, 31);
 	background-position-x: 0;
 	background-position-y: 0.5;
 	color: rgb(72, 64, 64);
@@ -81,14 +86,18 @@ li {
 	font-family: Serif, Arial;
 } 
 
-.grid-container-nav { 
+.grid-container { 
 	display: grid;
-	justify-content: center;
+	grid-template-columns: 100px 100px 100px
+	background-color: purple;
+
+
+	/*justify-content: center;*/
 	row-gap: 100px;
-	grid-column-start: 1;
+	/*grid-column-start: 1;
 	grid-column-end: 1;
 	grid-row-start: 1;
-	grid-row-end: 1;
+	grid-row-end: 1;*/
 
 }
 
