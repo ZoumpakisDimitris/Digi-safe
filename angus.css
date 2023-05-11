@@ -3,24 +3,20 @@
 	color: rgb(0, 0, 0);
 	text-align: center;
 }
+ 
 
-.stand { 
-
-
-}
-
-body { 
-	background-color: rgb(1, 73, 95);
-	color: rgb(0, 0, 0);
-	margin: 0;
+body { 												
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);				
+	margin: 0;													/* vital */
 	padding: 0; 
-	height: 1vw;
+	height: 1vw;	/* relative length - relative to 1% */
 }
 
 	body {
 		font-family: 'Syne', sans-serif;	}
 
-body::-webkit-scrollbar {				/* Customizing the scroll bar */
+body::-webkit-scrollbar {				/* Customizing scroll bar */
 	width: 10px;
 	}
 	body::-webkit-scrollbar-track {
@@ -28,57 +24,70 @@ body::-webkit-scrollbar {				/* Customizing the scroll bar */
 	}
 	body::-webkit-scrollbar-thumb {
 		background: rgb(0, 0, 0);
-	}
-	nav { 				/* Customizing the navigation bar */
-		display:contents;
-			float: 0;
-			position: sticky;
-			top: 0;
-			width: 10px;
-	height: 100vh;
-				margin: 0px;
-				padding: 0px;
-		flex-direction: row;
-		align-items: center;
-	background-color: rgb(0, 0, 0);
-	border: 0px solid green;
-	
+		
+/* 		
+	nav	}
+		{ 									
+			display:contents;
+				float: 0;
+				position: sticky;
+				top: 0;
+				width: 10px;
+		height: 100vh;
+				margin: 0px;								/* navigation bar version 1 */ 
+				/* padding: 0px;						
+				flex-direction: row;
+			align-items: center;
+			background-color: rgb(0, 0, 0);
+			border: 0px solid green;*/
 	
 }
-.active {
-	background-color: red;
-}
-.columnA {
+
+
+/* .columnA {
 	float: right;
 	width: 10%;
 	padding:10px;
 	height: 50cm;
-	background-color: rgba(199, 111, 82, 0.56);
-	text-color: green
+	background-color: rgba(199, 111, 82, 0.56);		/* not vital */ 
+	/*text-color: green
 	text-allign:center;
 	font-family: sans-serif; 
-}
+	} */
 
 footer {
 	text-align: center;
 	padding: 10px;
-	background-color: rgb(184, 70, 31);
+	background-color: rgb(1, 73, 95);
 	background-position-x: 0;
 	background-position-y: 0.5;
-	color: rgb(72, 64, 64);
+	color: rgb(160, 64, 4);
 }
 
-/* ul {
-  list-style-type:none;
-  margin:0;
-  padding:0;
+ul {
+	list-style-type: none; 
+	margin: 0%;
+	padding: 0%;
+	width: 15px;
+	overflow: hidden;
+	background-color: rgb(1, 73, 95);
+
 }
 
-li {
-	display:inline;
+li  {
+	float: left;
+}
+
+li a	{ 
+	display: block;
+	color:rgb(0, 0, 0);
+	text-align: justify;
+	padding: 14px 16px;
+}
+	a { 
+		padding: 16px;
+		
 	}
-*/
-
 
 .p1 {
 	text-align: center;
@@ -86,14 +95,14 @@ li {
 	font-family: Serif, Arial;
 } 
 
-.grid-container { 
+.container { 
 	display: grid;
 	grid-template-columns: 100px 100px 100px
 	background-color: purple;
 
 
 	/*justify-content: center;*/
-	row-gap: 100px;
+	/*row-gap: 100px; */ 
 	/*grid-column-start: 1;
 	grid-column-end: 1;
 	grid-row-start: 1;
@@ -101,6 +110,3 @@ li {
 
 }
 
-.slideone { 
-	background-image: url(absred.jpg);
-}
