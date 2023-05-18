@@ -13,6 +13,32 @@
 </head>
 	
 <body>	
+	<script> /* js for the scroll to top button */ 
+	const scrollUp = document.querySelector("#scroll-up");
+
+		scrollUp.addEventListener("click", () => {
+  		window.scrollTo({
+    		top: 0,
+    		behavior: "smooth",
+  		});
+});
+	</script>
+	<i class="scroll-up" id="scroll-up"> 
+		<img src="up-arrow.png"
+       	class="up-arrow"
+       	alt="up-arrow"
+	/>
+</i>
+
+<div class="theme-switch">
+    <input type="checkbox" class="checkbox" id="checkbox" />
+    <label for="checkbox" class="label">
+       <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+       <ion-icon name="moon-outline" class="moon"></ion-icon>
+       <div class="switcher"></div>
+    </label>
+</div> 
+
 	<!-- Landing page -->
 <section <div class="land"> 
 	<style> {tab-size: 16;} </style> {
@@ -21,7 +47,7 @@
 <div class="navbar">
 	<ul> <!-- Creating navigation bar & linking from external page -->	
 		<li><a href="D:\Programming\Cyber-Safe (github)\cyber-safe/index.html">Home</a>|</li> 
-			<li><a href="D:\Programming\Cyber-Safe (github)\cyber-safe\about.html">About us</a>|</li> 
+			<li><a href="#about.html">About us</a>|</li> 
 				<li><a href="D:\Programming\Cyber-Safe (github)\cyber-safe/Services.html">Services</a>|</li> 
 			<li><a href="D:\Programming\Cyber-Safe (github)\cyber-safe/Contact.html">Contact us</a>|</li> 
 	</ul>	
@@ -42,9 +68,9 @@
 <header> 
 	<div class="header">
 		<h1> <strong> STAYING SAFE WHILE LEARNING </strong> </h1>
-			<a href="https://www.twitter.com/"  target="_self"> Join us on Twitter</a>
-			<a href="https://www.instagram.com/"  target="_self"> Join us on Instagram</a>
-			<a href=""  target="_self"> Join the safest community on Discord</a>
+			<a href="https://www.twitter.com/"  target="_self"> Join us on Twitter</a> |
+			<a href="https://www.instagram.com/"  target="_self"> Join us on Instagram</a> |
+			<a href=""  target="_self"> Join the safest community on Discord</a> |
 	</div>
 </header>
  
@@ -94,14 +120,30 @@
 </section>
 <!-- Cyber tips-->
 
-<section> 
+<section class="sub" id="sub"> 
+	<h2> Subscribe to our newsletter </h2>
+		<form action="#"> 
+			<input 
+				type="email"
+				name="email"
+				id="email-sub"
+				class="email-sub"
+				required
+		/>
+	<input
+		type="submit"
+		value="Subscribe"
+		id="sumbit-btn"
+		class="sumbit-btn"
+</form> 
+<h2> Dont miss out on any new cybercrime! </h2>
+</section>
 	<h1>More Reads</h1>
 </section>
 
 <footer>  
 	<h3>  
-		All rights reserved
-				&copy;	DigiSafe 
+		&copy;2023. All rights reserved
 	</h3>
 </footer>
 </body>
