@@ -138,6 +138,11 @@ footer{
 		float:left;	
 		position: sticky;
 	}
+	/* Highlighting the current page*/
+	.navbar a.active{
+		background-color: rgb(18, 43, 8);
+		color: white;
+	}
 
 	.navbar li a:hover {
 		background-color: blueviolet;
@@ -146,10 +151,18 @@ footer{
 	}
 /* navigation bar*/
 
-.dpc{
+.navbar input[type=text]{
+	float:right;
+	position: fixed;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 200px;
+	font-size: 15px;
 
 }
-
 .p1 {
 	text-align: center;
 	color: green	;
@@ -221,3 +234,45 @@ footer{
 				.sumbit-btn:hover{
 					background-color: rgb(18, 43, 8);
 				}
+
+.cu{
+	background-color: rgb(1, 73, 95);
+	color: white;
+	font-size: 30px;
+
+}
+
+/* About Section - form */
+/* Style inputs with type="text" */
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 20px;
+	border: 1px solid silver;
+	border-radius: 4px; 
+	box-sizing: border-box; /* padding and width stays in place */
+	margin-top: 6px;
+	margin-bottom: 16px; 
+	resize: vertical /* Allow the user to vertically resize the textarea */
+  }
+  
+  /* Style the submit button*/
+  input[type=submit] {
+	background-color: rgb(1, 73, 95);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button change color */
+  input[type=submit]:hover {
+	background-color: rgb(45, 18, 18);
+  }
+  
+  /* Background color and padding around form */
+  .container {
+	border-radius: 5px;
+	background-color: silver;
+	padding: 20px;
+  }
