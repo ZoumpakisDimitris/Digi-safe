@@ -14,7 +14,8 @@
 </head>
 	
 <body>	
-	
+
+<!-- Scroll up button 
 	<script> const scrollUp = document.querySelector("#scroll-up");
 scrollUp.addEventListener("click", () => {
   	window.scrollTo({
@@ -25,13 +26,13 @@ scrollUp.addEventListener("click", () => {
 });
 	</script>
 	
-	
-	
 		<i class="scroll-up" id="scroll-up"> 
 			<img src="up-arrow.png"
        	class="up-arrow" alt="up-arrow"/>
 </i>
+Scroll up button -->
 
+<!-- Light theme/Dark theme switch button 
 <div class="theme-switch">
     <input type="checkbox" class="checkbox" id="checkbox" />
     <label for="checkbox" class="label">
@@ -40,20 +41,24 @@ scrollUp.addEventListener("click", () => {
        <div class="switcher"></div>
     </label>
 </div> 
+ Light theme/Dark theme switch button -->
 
 	<!-- Landing page -->
-<section <div class="land"> 
+<section div class="land"> 
 	<style> {tab-size: 16;} 
 		</style> 	
+	<!-- Navigation Bar -->
 	<nav>
-		<!-- Navigation Bar -->
 <div class="navbar">
 	<ul> <!-- Creating navigation bar & linking from external page -->	
 		<li><a href="index.html">Home</a> </li> 
 			<li><a href="about.html">About</a> </li> 
 				<li><a href="Services.html">Services</a> </li> 
 			<li><a href="Contact.html">Contact us</a> </li> 
-			<input type="text" placeholder="Search..">
+				<a href="#"> </a> <img src="DS.jpg" alt="our cool logo"
+					height="50px" width="50px" style="vertical-align: top;margin: 0px 30px;margin-left: 1100px;"
+					> 
+			<!-- <input type="text" placeholder="Search.."> -->
 	</ul>	
 </div>
 
@@ -80,22 +85,23 @@ scrollUp.addEventListener("click", () => {
 </header>
  
 
-<!--  stats -- Using flexbox --> 
-<section> 
-	<div class="flex-container">  
-		<div>The top 3 most attacked industries were Education/Research, Government/Military and Healthcare in 2022</div>
-		<div>79% of organisations in financial services, manufacturing, technology, energy, transportation, communication, healthcare, education and the public sector did not have a ‘zero trust’ IT architecture in 2022</div>
-		<div>Education Sector Experienced 44% Increase in Cyber-Attacks Over Last Year</div>
+<!--  Cyber stats -- Using gridbox --> 
+<section class="grid-even-columns">  
+	<div class="item-stat1"> <img src="top.png"
+		width="100" height="100" float="left"> The top 3 most attacked industries were Education/Research, Government/Military and Healthcare in 2022</div>
+	<div class="item-stat2"> <img src="edu.png"
+		width="100" height="100"> Education Sector Experienced 44% Increase in Cyber-Attacks Over Last Year</div>
 	</div>
 </section>
-<!-- Cyber stats-->
+<!-- Cyber stats -- Using Gridbox -->
 
 <!-- tips -- Using Grid -->
 <section div class="grid-container" > 
 	
 	<div class="item itempass">  
+		<img src="lock.png" alt="strong lock" width="100px" height="100px">
 		<h1> Passwords </h1>
-			<h3> The passwords you use are one of the most important factors in staying safe online</h3>
+			<h2> The passwords you use are one of the most important factors in staying safe online</h2>
 			<p>Having your dogs name as your password although cute is very risky, such passwords can be stolen or 
 				brute forced easily so Make sure your passwords are complex and include:</p>
 				<li> Uppercase Letters </li>
@@ -106,18 +112,21 @@ scrollUp.addEventListener("click", () => {
 	</div>
  
 <div class="item itemlink"> 
+	<img src="link.png" alt="" width="100px" height="100px">
 	<h1> Links </h1>
+		<h2> Could lead to malware being installed on your machine</h2>
 		<p> Dont open a link if you are not sure what it is <br>
+			Same goes for files, dont download if you are not sure what you are downloading <br>
 			Make sure you trust the source <br> 
-		<em> An unknown link could lead to malware being installed on your machine </em>
 		</p>
 </div>
 
 	<div class="itemphis"> 
+		<img src="hacker.png" alt="" width="100px" height="100px">
 		<h1> Phising </h1>
-			<p> <em> If its too good to be true, then it probably isnt!</em> <br>
-			Dont fall for scams, be sure to know to who you are talking and beware of their intentions<br>
-			Verify where you put your information
+			<h2>If its too good to be true, then its probably a scam!</h2>
+			<p>Dont fall for such, be sure to know to who you are talking and beware of their intentions<br>
+			Verify where you put your information and be extra cautious
 		 </p>
 	</div>
 </section>
@@ -144,11 +153,11 @@ scrollUp.addEventListener("click", () => {
 </section>
 <!-- Newsletter Sub Section -->
 
-<!-- -->
-<section>
-	<h1>More Reads</h1>
-		
-</section>
+<!-- Tools for privacy section -- using gridbox 
+<div class="grid-triple-container"> 
+	
+</div>
+ Tools for privacy section -- using gridbox -->
 
 <footer>  
 	<h3>  

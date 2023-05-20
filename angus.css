@@ -2,20 +2,27 @@ header {
 	background-color: rgb(1, 73, 95);
 	color: rgb(0, 0, 0);
 	text-align: center;
+	font-size: 25px;
 }
  
-/* vital */
 body {
 	font-family:'Syne', sans-serif; 												
-	background-color: rgb(255, 255, 255);
-	color: rgb(0, 0, 0);				
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);				
 	margin: 0;													
 	padding: 0; 
 	height: 1vw;	/* relative length  */
 }
-/* vital */
 
-/* scroll to top of page button*/
+footer{ 
+	background-color:rgb(0, 0, 0);
+	color: white;
+	text-align: center;
+	padding: 10px
+	
+}
+
+/* scroll to top of page button
 .scroll-up{
 	position: fixed;
 	right: 0.5%;
@@ -26,9 +33,10 @@ body {
 		width: 50px;
 		height: 50px;
 	}
-/* scroll to top of page button*/
+ scroll to top of page button*/
 
-/* light-dark theme changer*/
+/* light-dark theme changer
+ 
 .checkbox{
 	opacity: 0;
 	position: absolute;
@@ -58,8 +66,8 @@ body {
 	}
 	.sun{
 		color: green;
-	}
-/* light-dark theme changer*/
+	} 
+ light-dark theme changer */
 
 	/* Customizing scroll bar */
 body::-webkit-scrollbar {				
@@ -73,13 +81,7 @@ body::-webkit-scrollbar {
 	}
 /* Customizing scroll bar */
 
-footer{ 
-	background-color:rgb(0, 0, 0);
-	color: white;
-	text-align: center;
-	padding: 10px
-	
-}
+
 
 /* Landing page */
 .land{
@@ -88,14 +90,8 @@ footer{
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-
-
 }
 
-	.hotdog{
-		color: white;
-	}
-	
 	.cc {
 		color: rgb(255, 255, 255);
 		align-items: right;
@@ -113,11 +109,6 @@ footer{
 	color: rgb(255, 255, 255);
 	font-size: 110px;
 	text-align: left;
-}
-
-.logo{
-	background-image: url(DigiSafe-logos/DigiSafe-logos_transparent.png);
-
 }
 /* Landing page */
 
@@ -156,48 +147,77 @@ footer{
 	}
 /* navigation bar*/
 
-.navbar input[type=text]{
-	float:left;
-	position: absolute;
+/* Search bar -- not working due to my nav bar being a list */
+ .navbar input[type=text]{
+	float: right;
+	text-align: left;
 	padding: 5px;
 	border: none;
 	border-radius: 5px;
 	font-size: 15px;
-	overflow-x: hidden;
-
-}
-
-.p1 {
-	text-align: center;
-	color: green	;
-	font-family: Serif, Arial;
 
 } 
 
+.icon{
+	
+	height: 100px;
+	width: 100px;
+	position: fixed;
+} 
+
+.grid-even-columns{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	justify-items: center;
+	text-align: center;
+}
+	.item-stat1{
+		background-color: rgb(45, 18, 18);
+		color: white;
+			border: 5px;
+			border-radius: 5px;
+			border-style:dashed;
+			border-color: rgb(0, 0, 0);
+			
+	}
+
+	.item-stat2{
+
+		background-color: rgb(45, 18, 18);
+		color: white;
+			border: 5px;
+			border-radius: 5px;
+			border-style:dashed;
+			border-color: rgb(0, 0, 0);
+		
+	}
 		
 .grid-container {
 	display: grid | inline;
-	grid-template-rows: [row1-start] 33% [row1-end row2-start]  33% [row2-end row3-start] 33%
+	gap: 1rem;
+	grid-template-rows: repeat(3, 33px [row-start]);
 	grid-template-columns: repeat(3, 33px [col-start]);
 }
 
-	.container{
-		grid-template-areas: 
-		
-	}
 	
 		.itempass {
-			
+			text-align: center;
+			background-color: slateblue;
 		}
 
 		.itemlink {
-		
+			text-align: center;
+			background-color: slateblue;
 		}
+		
 
 		.itemphis {
+			text-align: center;
+			background-color: slateblue;
 		
 	}
-	/* 
+	
+/* First attempt at styling tips section
 .tips {
 	position: absolute;
 	text-align: center;
@@ -208,6 +228,8 @@ footer{
 	border-color: blueviolet;		
 }
 */
+
+/* flex container that was not used eventually 
  .flex-container { 
 	display: flex;
 	flex-direction:row;
@@ -220,39 +242,64 @@ footer{
 	color: white;
 	background-color: rgb(45, 18, 18);
  }
+*/
 
-.sub{
-	background-color: rgb(1, 73, 95);
+/* Gridbox meant to be used for privacy tools section */
+.grid-triple-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	background-color: rgb(45, 18, 18);
+	grid-template-areas: 
+		"header header header" 
+		"main main main"
+		"footer";
 }
+	.item-a{
+		grid-area: header;
+		background-color: rgb(177, 1, 1);
+	}
 
-		form{ 
-			text-align: center;
-			margin: 1rem 2rem;
+	.item-b{
+		grid-area: main;
+		float: center;
+	}
+/* Gridbox meant to be used for privacy tools section */
+
+/* Subscribe to Newsletter Section */
+	form{ 
+		text-align: center;
+		margin: 1rem 2rem;
 		}
 
-		.email-sub{
-			height: 50px;
-			width: 500px;
-			border: 2px solid rgb(45, 18, 18);
+	
+		.sub{
+			background-color: rgb(1, 73, 95);
+ 		}
+		
+	.email-sub{
+		height: 50px;
+		width: 500px;
+		border: 2px solid rgb(45, 18, 18);
+		border-radius: 5px;
+	}
+
+		.sumbit-btn{
+			background-color: rgb(45, 18, 18);
+			color: white;
+			padding: 20px;
+			border: none;
 			border-radius: 5px;
 		}
-
-			.sumbit-btn{
-				background-color: rgb(45, 18, 18);
-				color: white;
-				padding: 20px;
-				border: none;
-				border-radius: 5px;
+			.sumbit-btn:hover{
+				background-color: rgb(18, 43, 8);
 			}
-				.sumbit-btn:hover{
-					background-color: rgb(18, 43, 8);
-				}
+/* Subscribe to Newsletter Section */
 
 .cu{
 	background-color: rgb(1, 73, 95);
 	color: white;
 	font-size: 30px;
-
 }
 
 /* About Section - form */
@@ -289,3 +336,30 @@ input[type=text], select, textarea {
 	background-color: silver;
 	padding: 20px;
   }
+
+/*Services Page*/
+.grid-double-container{
+	display: grid;
+	grid-template-rows:50% 50%;
+	grid-template-columns: 50% 50%;
+}
+
+	.info{ 
+		background-color: palegoldenrod;
+		color: black;
+	}
+
+	.adv{
+		background-color: palevioletred;
+		color: black;
+	}
+
+	.tool{
+		background-color: paleturquoise;
+		color: black;
+	}
+
+	.sup{ 
+		background-color: palegreen;
+		color:black;
+	}
