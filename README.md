@@ -1,4 +1,8 @@
-# cyber-safe
-A website with tips and tools for students to stay safe in the digital world 
-This is a class Project for my Web Development class meant to be submitted by week 11. 
-Tools that need to be used --> HTML, CSS, PHP, Javascript, JQuery, Bootstrap
+# DigiSafe
+A website created to inform students of the dangers of the Internet and tips to help them stay safe!
+    This is a class Project for CSE125 - Computer Networking & web development. 
+
+Tools used --> HTML, CSS, JS
+Fonts Used --> 
+Colors Used --> 
+

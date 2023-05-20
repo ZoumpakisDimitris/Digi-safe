@@ -2,32 +2,34 @@
 <html lang="en">
 <head> 
 	<link rel="stylesheet" href="angus.css">
+	<script src="sky.js" defer></script>
 		<meta charset="UTF-8">
 			<style>		/* Applying custom font (taken from google fonts) */
 				@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
 			  	</style>
-			<title>SafeLearning</title>
+			<title>DigiSafe</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="apple-touch-icon" sizes="180x180" href="D:\Programming\Cyber-Safe (github)\cyber-safe\favicon.ico">
-	<link rel="icon" type="image/png" sizes="32x32" href="D:\Programming\Cyber-Safe (github)\cyber-safe\">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/DS-1.png">
 </head>
 	
 <body>	
-	<script> /* js for the scroll to top button */ 
-	const scrollUp = document.querySelector("#scroll-up");
-
-		scrollUp.addEventListener("click", () => {
-  		window.scrollTo({
-    		top: 0,
-    		behavior: "smooth",
-  		});
+	
+	<script> const scrollUp = document.querySelector("#scroll-up");
+scrollUp.addEventListener("click", () => {
+  	window.scrollTo({
+    	top: 0,
+		left: 0,
+    	behavior: "smooth",
+  	});
 });
 	</script>
-	<i class="scroll-up" id="scroll-up"> 
-		<img src="up-arrow.png"
-       	class="up-arrow"
-       	alt="up-arrow"
-	/>
+	
+	
+	
+		<i class="scroll-up" id="scroll-up"> 
+			<img src="up-arrow.png"
+       	class="up-arrow" alt="up-arrow"/>
 </i>
 
 <div class="theme-switch">
@@ -41,21 +43,22 @@
 
 	<!-- Landing page -->
 <section <div class="land"> 
-	<style> {tab-size: 16;} </style> {
+	<style> {tab-size: 16;} 
+		</style> 	
 	<nav>
 		<!-- Navigation Bar -->
 <div class="navbar">
 	<ul> <!-- Creating navigation bar & linking from external page -->	
-		<li><a href="D:\Programming\Cyber-Safe (github)\cyber-safe/index.html">Home</a>|</li> 
-			<li><a href="about.html">About</a>|</li> 
-				<li><a href="Services.html">Services</a>|</li> 
-			<li><a href="Contact.html">Contact us</a>|</li> 
+		<li><a href="index.html">Home</a> </li> 
+			<li><a href="about.html">About</a> </li> 
+				<li><a href="Services.html">Services</a> </li> 
+			<li><a href="Contact.html">Contact us</a> </li> 
 			<input type="text" placeholder="Search..">
 	</ul>	
-	</div>
+</div>
 
-		<a href="#" class="logo"> 
-			<h1 class="hotdog"> DigiSafe </h1> </a>
+		<a href="#" class="title"> 
+			<h1 class="title"> DigiSafe </h1> </a>
 				<h2 class="cc">Keep your information Personal</h3>
 			<h3 class="cc"> Stay safe and prepared against cybercrime and malicious actions </p>
 		<h2 class="cd">Your Information is Precious</h2>
@@ -65,7 +68,8 @@
 </nav>
 </section>
 </div>
-	
+<!-- Landing page -->
+
 <header> 
 	<div class="header">
 		<h1> <strong> STAYING SAFE WHILE LEARNING </strong> </h1>
@@ -76,7 +80,7 @@
 </header>
  
 
-<!-- Cyber stats-->
+<!--  stats -- Using flexbox --> 
 <section> 
 	<div class="flex-container">  
 		<div>The top 3 most attacked industries were Education/Research, Government/Military and Healthcare in 2022</div>
@@ -86,40 +90,38 @@
 </section>
 <!-- Cyber stats-->
 
-<!-- Cyber tips-->
-<div class="grid-container">
-<section>  
+<!-- tips -- Using Grid -->
+<section div class="grid-container" > 
+	
+	<div class="item itempass">  
 		<h1> Passwords </h1>
-		<h3> The passwords you use are one of the most important factors in staying safe online</h3>
+			<h3> The passwords you use are one of the most important factors in staying safe online</h3>
 			<p>Having your dogs name as your password although cute is very risky, such passwords can be stolen or 
 				brute forced easily so Make sure your passwords are complex and include:</p>
-			<li> Uppercase Letters </li>
-			<li> Lowercase Letters </li>
-			<li> Numbers </li>
-			<li> Symbols </li>
-		<h3> <em> Tip: Use a password manager </em></h3>
-	</section>
+				<li> Uppercase Letters </li>
+				<li> Lowercase Letters </li>
+				<li> Numbers </li>
+				<li> Symbols </li>
+			<h3> <em> Tip: Use a password generator </em></h3>
+	</div>
+ 
+<div class="item itemlink"> 
+	<h1> Links </h1>
+		<p> Dont open a link if you are not sure what it is <br>
+			Make sure you trust the source <br> 
+		<em> An unknown link could lead to malware being installed on your machine </em>
+		</p>
 </div>
 
-
-<section style class="grid-container"> 
-		<h1> Links </h1>
-			<p> Dont open a link if you are not sure what it is <br>
-				Make sure you trust the source <br> 
-				<em> An unknown link could lead to malware being installed on your machine </em>
-			</p>
-	</div>
-</section>
-
-<section> 
-	<div class="grid-container"> 
+	<div class="itemphis"> 
 		<h1> Phising </h1>
-		<p> Dont fall for scams, be sure to know to who you are talking and beware of their intentions<br>
+			<p> <em> If its too good to be true, then it probably isnt!</em> <br>
+			Dont fall for scams, be sure to know to who you are talking and beware of their intentions<br>
 			Verify where you put your information
 		 </p>
 	</div>
 </section>
-<!-- Cyber tips-->
+<!-- tips -- Using Grid -->
 
 <!-- Newsletter Sub Section -->
 <section class="sub" id="sub"> 
