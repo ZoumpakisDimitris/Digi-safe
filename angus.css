@@ -143,7 +143,6 @@ body::-webkit-scrollbar {
 	.navbar li a:hover {
 		background-color: blueviolet;
 		color: rgb(0, 0, 0);
-		padding: 0;
 	}
 /* navigation bar*/
 
@@ -298,8 +297,9 @@ body::-webkit-scrollbar {
 
 .cu{
 	background-color: rgb(1, 73, 95);
-	color: white;
+	color: rgb(255, 255, 255);
 	font-size: 30px;
+	text-align: center;
 }
 
 /* About Section - form */
