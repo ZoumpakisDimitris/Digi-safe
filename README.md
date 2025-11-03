@@ -41,4 +41,3 @@ This project was created as part of the **CSC125** course and demonstrates pract
 
 **Dimitris Zoumpakis**  
 BSc Computer Information Systems – European University Cyprus  
-[GitHub Profile](https://github.com/your-github-link)
